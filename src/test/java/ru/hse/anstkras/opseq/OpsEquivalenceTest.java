@@ -20,4 +20,8 @@ class OpsEquivalenceTest {
         assertTrue(OpsEquivalence.opsEqual("+20*1+10", "+20+10*1"));
     }
 
+    @Test
+    void testNotEqual() {
+        assertFalse(OpsEquivalence.opsEqual("+10*2", "*2+10"));
+    }
 }

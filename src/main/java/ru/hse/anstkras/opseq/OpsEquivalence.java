@@ -27,8 +27,8 @@ public class OpsEquivalence {
             throw new IllegalArgumentException("Sets of operations are not equal");
         }
 
-        firstOpsList = firstOpsList.stream().filter(op -> op.equals(NEUTRAL_OP)).collect(Collectors.toList());
-        secondOpsList = secondOpsList.stream().filter(op -> op.equals(NEUTRAL_OP)).collect(Collectors.toList());
+        firstOpsList = firstOpsList.stream().filter(op -> !op.equals(NEUTRAL_OP)).collect(Collectors.toList());
+        secondOpsList = secondOpsList.stream().filter(op -> !op.equals(NEUTRAL_OP)).collect(Collectors.toList());
 
         Queue<Op> queueFirst = new LinkedList<>(firstOpsList);
         Queue<Op> queueSecond = new LinkedList<>(secondOpsList);
