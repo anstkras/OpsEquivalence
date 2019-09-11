@@ -6,6 +6,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/** Class that computes the equality of appliance of two sets of operations. */
 public class OpsEquivalence {
     private final static String DELIMITER = "((?=[+*]))";
 
@@ -75,14 +76,6 @@ public class OpsEquivalence {
             }
             this.op = op;
             this.number = number;
-        }
-
-        public char getOp() {
-            return op;
-        }
-
-        public int getNumber() {
-            return number;
         }
 
         @Override
