@@ -19,7 +19,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Class": "ru.hse.anstkras.opseq.OpsEquivalence"
+        attributes "Main-Class": "ru.hse.anstkras.opseq.Main"
     }
 }
     
