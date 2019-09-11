@@ -6,7 +6,9 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/** Class that computes the equality of appliance of two sets of operations. */
+/** Class that computes the equality of appliance of two sets of operations.
+ * Operation consists of an operator and a natural number.
+ */
 public class OpsEquivalence {
     private final static String DELIMITER = "((?=[+*]))";
 
